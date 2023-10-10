@@ -52,7 +52,7 @@ class Remp extends AbstractProvider
      */
     public function getResourceOwnerDetailsUrl(AccessToken $token)
     {
-        return $this->rempUrl . '/api/v1/user/info';
+        return $this->rempUrl . '/api/v1/user/info?source=oauth_token';
     }
 
     /**
